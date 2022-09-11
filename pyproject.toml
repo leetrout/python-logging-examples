@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-logging-examples"
+version = "0.0.1"
+description = "Simple logging examples for Python & Django"
+authors = ["Lee Trout"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "python_logging_examples"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+structlog = "^22.1.0"
+Django = "^4.1.1"
+black = "^22.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
